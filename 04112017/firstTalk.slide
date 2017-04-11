@@ -43,7 +43,7 @@ vishalcjha@gmail.com
 - what we usually do : put log at every line
 - what is really wrong : error looses context
 - do u have a better example 
-.link https://github.com/MediaMath/byoa-price-engine/blob/master/server/adapter.go#L29 AwesomeError
+.link https://github.com/MediaMath/byoa-price-engine/blob/master/server/adapter.go#L29 AwesomeError(PrivateRepo)
 .link https://github.com/pkg/errors InspiredFrom
 
 * Function 
