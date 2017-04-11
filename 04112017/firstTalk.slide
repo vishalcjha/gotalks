@@ -1,0 +1,77 @@
+Feature I Like In Go
+Feature I Use In Go
+
+Vishal Kumar
+Software Engineer, MediaMath
+vishalcjha@gmail.com
+
+* What we gonna talk about
+
+- First Thing First - End Battle of Editors 
+- Awesome Error - only if you use it right
+- Functions - first class
+- GC - Do not let this to bring u down
+
+* Visual Code 
+
+- Enforces same naming convention
+- Enforces comments 
+- Helps to find which part of code is test covered 
+- Finds bugs too 
+
+* Visual Code Helps finding bugs too - This seems not working :(
+.play visualcode/findbug.go
+
+* Errors - Why Go Error Design is Awesome
+
+* Whats wrong with Int63n(n int64) int64
+.play badrand/badRand.go
+
+* What went wrong 
+- What is wrong : Function is not complete, its partial
+- Singnature of function lies
+- How to make it Compelete : Change signature to func Int63n(n int64) (int64, error)
+
+* Code Example
+.play awesomerand/correctRand.go
+
+* Why Error Are Not Awesome Exmaple 
+.play errorlimitation/main.go
+
+* What Went Wrong With Error 
+- we can not say where error is coming from
+- what we usually do : put log at every line
+- what is really wrong : error looses context
+- do u have a better example 
+.link https://github.com/MediaMath/byoa-price-engine/blob/master/server/adapter.go#L29 AwesomeError
+.link https://github.com/pkg/errors InspiredFrom
+
+* Function 
+- They are first class
+- High order function
+- Do Not clubber code if not needed
+- Decorate your application 
+
+* Code Example
+.play adapter/main.go
+
+* Go Is Fast but GC :(
+- Go has stack !!!
+- Go has heap and GC 
+- Use Benchmarktool 
+    . go test -bench=. -benchmem
+- Use mempool or sync pool
+
+* What do i mean go has stack 
+.play stack/main.go
+
+* Allocation Friendly Adapter
+.play memadapter/main.go
+
+* Is Golang Nirvana !!! 
+- Do not think so, but what it gives is simplicity and ends many wars 
+- Languages like scala have great feature but do have learning curve 
+    . its expression based no statement
+    . traits are just awesome - they provide stackability (decoratable) 
+    . plethora of utilities 
+    . boosts functional thinking - I am liking immutability more and more
