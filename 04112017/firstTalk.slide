@@ -13,11 +13,15 @@ vishalcjha@gmail.com
 - GC - Do not let this to bring u down
 
 * Visual Code 
-
+- two kind of ppl - 
+.image VimGuy.JPG 100 200
+    .rest of us
 - Enforces same naming convention
 - Enforces comments 
 - Helps to find which part of code is test covered 
-- Finds bugs too 
+- Identifies few bugs too 
+- Basically it runs various tools for us 
+    . fmt vet etc...
 
 * Visual Code Helps finding bugs too - This seems not working :(
 .play visualcode/findbug.go
